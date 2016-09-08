@@ -43,9 +43,7 @@ prompt_command () {
     local DEFAULT="\[\033[0;39m\]"
     # set the titlebar to the last 2 fields of pwd
     local TITLEBAR='\[\e]2;`pwdtail`\a'
-#    export PS1="\[${TITLEBAR}\]${DKGRAY}[${DKBLUE}[${BLUE}[${CYAN}[${BCYAN}[${WHITE}[ ${BCYAN}\u${WHITE}@${BCYAN}\
-#\h${DKGRAY} (${LOAD}) ${WHITE}${TIME} ${WHITE}]${BCYAN}]${CYAN}]${BLUE}]${DKBLUE}]${DKGRAY}]${RED}$ERRPROMPT${WHITE}\
-#\w\n${GREEN}${BRANCH}${DEFAULT}$ "
+    #set PS1 prompt
     export PS1="\[${TITLEBAR}\]${DKGRAY}[${DKRED}[${RED}[${WHITE}[ ${YELLOW}\u${DKYELLOW}@${YELLOW}\
 \h${DKYELLOW} (${LOAD}) ${YELLOW}${TIME} ${WHITE}]${RED}]${DKRED}]${DKGRAY}]${RED}$ERRPROMPT${WHITE}\
 \w\n${GREEN}${BRANCH}${DEFAULT}$ "
